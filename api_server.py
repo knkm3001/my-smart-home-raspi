@@ -13,9 +13,7 @@ def home():
     return 'raspiのさーばだよ'
 
 
-
-
-@app.route('/api/infrared_code/',methods=["POST"])
+@app.route('/raspi-api/infrared_code/',methods=["POST"])
 def infrared_code():
     post_data = request.get_json()
     funcs.exec_infrared_code(post_data)
